@@ -9,8 +9,8 @@
   "private": true,
   "scripts": {
     "dev": "NODE_ENV=development && yarn run clean && parcel serve -p 1234 ./src/index.html",
-    "build": "yarn run clean && NODE_ENV=production build ./src/index.html --no-cache --no-source-maps --public-url",
-    "deploy": "yarn run clean && yarn run build && github-pages ",
+    "build": "yarn run clean && NODE_ENV=production parcel build ./src/index.html --no-cache --no-source-maps --public-url ./",
+    "deploy": "yarn run clean && yarn run build && gh-pages ",
     "clean": "rimraf dist"
   },
   "devDependencies": {
