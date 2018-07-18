@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "NODE_ENV=development && yarn run clean && parcel serve -p 1234 ./src/index.html",
     "build": "yarn run clean && NODE_ENV=production parcel build ./src/index.html --no-cache --no-source-maps --public-url ./",
-    "deploy": "yarn run clean && yarn run build && gh-pages ",
+    "deploy": "yarn run clean && yarn run build && git subtree split --prefix dist -b gh-pages && git push -f origin gh-pages:gh-pages && git checkout master && git branch -D gh-pages",
     "clean": "rimraf dist"
   },
   "devDependencies": {
