@@ -1,8 +1,103 @@
+@import url('./normalize.css');
+@import url('./skeleton.css');
+@import url('./font/font.css');
+
+html {
+  font: 16px/1.5 'DINPro', sans-serif;
+  background: #FFFFFF;
+}
+
+body {
+  font-size: 100%;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+
+h1, h2, h3, h6 {
+  font-family: 'Archer Light', serif;
+}
+
+h1 {
+ font-size: 9rem;
+ color: #FFFFFF;
+ letter-spacing: 1.82px;
+}
+
+h2 {
+  font-size: 4.5rem;
+  text-align: center;
+  color: #4A4A4A;
+  letter-spacing: 0.91px;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4, h5 {
+  font-family: 'Archer Bold', serif;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #3359df;
+  letter-spacing: 1.37px;
+}
+
+h5 {
+  font-szie: 1.25rem;
+  color: #4A4A4A;
+  letter-spacing: 0.91px;
+}
+
+dd {
+  margin: 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(-21% -10%, #0A21A8 0%, #7C0AED 100%, #C86DD7 100%);
+  background-image: linear-gradient(-45deg, #0A21A8 0%, #7C0AED 100%, #C86DD7 100%);
+}
+
+.date {
+  color: #FFFFFF;
+  letter-spacing: 1.37px;
+  font-weight: 100;
+}
+
 .container {
-  max-width: 800px; }
+  width: 100%;
+  max-width: 800px;
+}
+
+.container > p {
+  text-align: center;
+  max-width: 90%;
+}
+
 .header {
   margin-top: 6rem;
-  text-align: center; }
+  text-align: center;
+}
+
+.venue {
+  text-align: center;
+}
+
+.venue > img {
+  width: 7.75rem;
+  height: auto;
+  border-radius: 100%;
+}
+
 .value-prop {
   margin-top: 1rem; }
 .value-props {
@@ -16,7 +111,13 @@
 .section {
   border-top: 1px solid #eee;
   padding: 4rem 0;
-  margin-bottom: 0;}
+  margin-bottom: 0;
+}
+
+.schedule, .faqs {
+  background-color: #F1F9FF;
+}
+
 .value-img {
   display: block;
   text-align: center;
