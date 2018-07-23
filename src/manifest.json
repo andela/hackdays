@@ -3,9 +3,9 @@
   "short_name": "Hackdays",
   "theme_color": "#3359df",
   "background_color": "#3359df",
-  "display": "browser",
+  "display": "minimal-ui",
   "orientation": "portrait",
-  "Scope": "/",
+  "scope": "/",
   "start_url": "/",
   "icons": [
     {

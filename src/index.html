@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <title>Hackdays@Andela</title>
-   <meta charset="utf-8"/>
+  <meta charset="utf-8"/>
+  <meta name="theme-color" content="#3359df"/>
   <meta name="author" content=""/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="description" content="Andela Hackdays is a time for engineers
   to tinker with new technologies to build useful, working proof-of-concepts and
   prototypes"/>
@@ -34,10 +35,11 @@
   <link href="./css/style.css" rel="stylesheet" />
 </head>
 <body>
-  <section class="hero">
+  <section id="particles">
     <div class="container">
-      <h1>Andela #hackdays</h1>
-      <h4 class="date">Thursday, Aug 2 & 3</h4>
+        <svg  width="91" height="91" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 91 91"><desc>Andela logo</desc><g fill="none"><g fill="#FFF"><path d="M60.5 59L48 28.1C47.7 27.3 47 25.9 45.5 25.9 44 25.9 43.3 27.3 43 28.1L30.4 59C30.4 59 30 60.1 30.1 60.2 30.2 60.4 30.4 60.4 30.5 60.4L34.4 60.4C34.7 60.4 35.1 60.2 35.2 59.8L38.3 52.3 52.7 52.3 55.8 59.8C55.9 60.2 56.2 60.4 56.6 60.4L60.5 60.4C60.6 60.4 60.8 60.4 60.9 60.2 61 60.1 60.5 59.1 60.5 59ZM45.5 47.5L40.1 47.5 45.5 34.5 50.9 47.5 45.5 47.5ZM51.1 18L45.5 11.2 39.9 18 32.4 13.9 42.3 2.2C43.2 1.1 44.1 0 45.5 0L45.5 0C46.9 0 47.7 1.1 48.6 2.2L58.6 13.9 51.1 18ZM39.9 73L45.5 79.8 51.1 73 58.6 77.1C58.6 77.1 49.6 87.7 48.7 88.8 47.8 89.9 46.9 91 45.5 91L45.5 91C44.1 91 43.3 89.9 42.4 88.8L32.4 77.1 39.9 73ZM30 22.1L21.2 21.2 22.1 30 13.9 32.4C13.9 32.4 12.8 18.5 12.6 17.1 12.5 15.7 12.4 14.3 13.3 13.3 14.3 12.4 15.7 12.5 17.1 12.6L32.4 13.9 30 22.1ZM61 68.9L69.8 69.8 68.9 61 77.1 58.6C77.1 58.6 78.2 72.5 78.3 73.9 78.5 75.3 78.6 76.6 77.7 77.6 76.7 78.6 75.3 78.4 73.9 78.3L58.6 77 61 68.9ZM18 39.9L11.2 45.5 18 51.1 13.9 58.6 2.2 48.6C1.1 47.7 0 46.9 0 45.5 0 45.5 0 45.5 0 45.5 0 44.1 1.1 43.3 2.2 42.4L13.9 32.4 18 39.9ZM73 51.1L79.8 45.5 73 39.9 77.1 32.4C77.1 32.4 87.7 41.4 88.8 42.3 89.9 43.2 91 44.1 91 45.5 91 46.8 89.9 47.7 88.8 48.6L77.1 58.5 73 51.1ZM22.1 61L21.2 69.8 30 68.9 32.4 77.1 17.1 78.3C15.7 78.5 14.3 78.6 13.3 77.7 12.4 76.7 12.6 75.3 12.7 73.9 12.8 72.5 14 58.6 14 58.6L22.1 61ZM68.9 30L69.8 21.2 61 22.1 58.6 13.9C58.6 13.9 72.5 12.8 73.9 12.6 75.3 12.5 76.6 12.4 77.6 13.3 78.6 14.3 78.4 15.7 78.3 17.1L77 32.4 68.9 30Z"/></g></g></svg>
+        <h1>#hackdays</h1>
+      <h4 class="date">Thursday, Aug 2 & 3, 2018</h4>
       </div>
   </section>
   <section class="section about">
@@ -51,15 +53,21 @@ In order to facilitate increased collaboration, we will have three venues in our
 campuses in the following countries.</p>
       <div class="row venues">
         <div class="venue one-third column">
-          <img src="./images/kenya.svg" alt="Kenya flag">
+          <div class="image-container rounded">
+            <img src="./images/kenya.svg" alt="Kenya flag">
+          </div>
           <p>Nairobi</p>
         </div>
         <div class="venue one-third column">
-          <img src="./images/nigeria.svg" alt="Nigeria flag">
+          <div class="image-container rounded">
+            <img src="./images/nigeria.svg" alt="Nigeria flag">
+          </div>
           <p>Lagos</p>
         </div>
         <div class="venue one-third column">
-          <img src="./images/uganda.svg" alt="Uganda flag">
+          <div class="image-container rounded">
+            <img src="./images/uganda.svg" alt="Uganda flag">
+          </div>
           <p>Kampala</p>
         </div>
       </div>
@@ -70,42 +78,30 @@ campuses in the following countries.</p>
       <h2>Schedule</h2>
       <p>Hackdays are a two-day event. Hacking will kick-off on Thursday August 2rd and conclude on Friday, August 3rd.</p>
       <dl>
-        <dt><h4>Thursday<h4></dt>
+        <dt><h4>Thursday</h4></dt>
         <dd>
           <table>
             <tr>
               <td>14:00 pm</td>
-              <td> Hacking starts</td>
-            </tr>
-            <tr>
-              <td>14:00 pm</td>
-              <td> Hacking starts</td>
-            </tr>
-            <tr>
-              <td>14:00 pm</td>
-              <td> Hacking starts</td>
+              <td>Hacking starts</td>
             </tr>
           </table>
         </dd>
-        <dt><h4>Friday<h4></dt>
+        <dt><h4>Friday</h4></dt>
         <dd>
           <table>
             <tr>
-              <td>14:00 pm</td>
-              <td> Hacking starts</td>
+              <td>16:00 pm</td>
+              <td>Hacking ends; Submission closed</td>
             </tr>
             <tr>
-              <td>14:00 pm</td>
-              <td> Hacking starts</td>
-            </tr>
-            <tr>
-              <td>14:00 pm</td>
-              <td> Hacking starts</td>
+              <td>18:00 pm</td>
+              <td>Demos & Judging</td>
             </tr>
           </table>
         </dd>
       </dl>
-      <pre>** Time is in <em>Eastern African Time</em></pre>
+      <pre>** Time is in <strong>Eastern African Time</strong>.</pre>
     </div>
   </section>
   <section class="section apis">
@@ -114,6 +110,62 @@ campuses in the following countries.</p>
       <p>In order to challenge the team to built and explore new technologies,
       this Hackday will be focused on the <strong>Artificial
         Intelligence</strong>.</p>
+      <div class="row">
+        <div class="one-third column">
+          <div class="box">
+            <a class="image">
+              <img src="./images/tensorflow.svg" alt="TensorFlow">
+            </a>
+            <div class="content">
+              <div>
+                <p class="title">TensorFlow</p>
+                <p class="description">TensorFlow is an open-source software library for dataflow programming across a range of tasks.</p>
+              </div>
+              <div>
+                <a class="link" href="https://www.tensorflow.org/" target="_blank">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="one-third column">
+          <div class="box">
+            <a class="image">
+              <img src="./images/pytorch.svg" alt="PyTorch">
+            </a>
+            <div class="content">
+              <div>
+                <p class="title">PyTorch</p>
+                <p class="description">PyTorch is a deep learning framework designed for both flexible research and efficient production deployment.</p>
+              </div>
+              <div>
+                <a class="link"
+                  href="https://facebook.ai/developers/tools/pytorch"
+                  target="_blank">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="one-third column">
+          <div class="box">
+            <a class="image">
+              <img src="./images/other.svg" alt="Other">
+            </a>
+            <div class="content">
+              <div>
+                <p class="title">Other AI APIs & Libraries</p>
+                <p class="description">Discover other amazing tools out there
+                in the wild and build something with it!</p>
+              </div>
+              <div>
+                <a class="link"
+                   href="https://www.google.com/search?ei=ikxVW5zXII-k_QbZ25zoDQ&q=open+source+artificial+intelligence+apis+and+libraries&oq=open+source+artificial+intelligence+apis+and+libraries&gs_l=psy-ab.3..33i22i29i30k1.6226.15145.0.15293.30.26.1.0.0.0.170.2038.15j7.22.0....0...1.1.64.psy-ab..7.23.2049...0j0i67k1j0i20i263k1j35i39k1j0i20i264k1j0i22i30k1j33i160k1.0.1pFcnLTa5VE"
+                   target="_blank">Search</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre>** Use <strong>any</strong> APIs & Libraries that gets the jobs done.</pre>
     </div>
   </section>
   <section class="section faqs">
@@ -127,12 +179,14 @@ campuses in the following countries.</p>
         </dd>
         <dt><h5>Who is eligible?</h5></dt>
         <dd>
-          <p>All Andela employees.</p>
+          <p>This hackday is open to Andela engineering employees. We will open
+          this up in the future to the larger Andela community.</p>
         </dd>
         <dt><h5>How can I apply to be a part of this?</h5></dt>
         <dd>
-          <p>You can register using this form <a
-                                                href="http://bit.ly/hackdays-form">here</a>.</p>
+          <p>You can <a href="http://bit.ly/hackdays-form">show interest to
+            participate using
+            this form</a>.</p>
         </dd>
         <dt><h5>What size are team? What happens if I don’t have a team?</h5></dt>
         <dd>
@@ -142,6 +196,14 @@ campuses in the following countries.</p>
         <dd>
           <p>Absolutely! Andela is distributed-first, so you are able to do. Idea for you, hack something that combines distributed + AI.</p>
         </dd>
+        <dt><h5>Will I be stay overnight if I am one of the campuses (i.e Kenya,
+          Nigeria, Uganda) ?</h5></dt>
+        <dd>
+          <p>Yes, we've made arrangement for food and made other amenities
+          available. Bring a hoodie and something to keep warm and some personal
+          hygiene necessities to ensure you spare yourself (and others) any
+          discomfort.</p>
+        </dd>
         <dt><h5>Not an Andelan, but I want to get involved?</h5></dt>
         <dd>
           <p>Unfortunately, these hackathons are internal but we will have many public hack events you will be able to attend.</p>
@@ -149,11 +211,9 @@ campuses in the following countries.</p>
       </dl>
     </div>
   </section>
-  <section class="section footer">
-    <div class="container">
+  <footer>
       <p>Andela Inc, &copy; 2018</p>
-    </div>
-  </section>
+  </footer>
   <script src="./js/vendor/fontsmoothie.min.js"></script>
   <script src="./js/index.js"></script>
 </body>

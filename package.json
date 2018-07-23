@@ -8,15 +8,21 @@
   "license": "UNLICENCED",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development && yarn run clean && parcel serve -p 1234 ./src/index.html",
-    "build": "yarn run clean && NODE_ENV=production parcel build ./src/index.html --no-cache --no-source-maps --public-url ./",
-    "deploy": "yarn run clean && yarn run build && git subtree split --prefix dist -b gh-pages && git push -f origin gh-pages:gh-pages && git checkout master && git branch -D gh-pages",
+    "dev": "NODE_ENV=development && yarn run clean && parcel serve ./src/index.html -p 1234 --open",
+    "build": "yarn run clean && NODE_ENV=production parcel build ./src/index.html --no-cache --no-source-maps --out-dir=dist --public-url ./ && workbox generateSW",
+    "deploy": "yarn run clean && yarn run build && now dist && now alias",
     "clean": "rimraf dist"
   },
   "devDependencies": {
-    "gh-pages": "^1.2.0",
-    "node-sass": "^4.9.2",
     "parcel-bundler": "^1.9.7",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "workbox-build": "^3.4.1",
+    "workbox-cli": "^3.4.1"
+  },
+  "dependencies": {
+    "animejs": "^2.2.0",
+    "gsap": "^2.0.1",
+    "particles.js": "^2.0.0",
+    "vivus": "^0.4.4"
   }
 }
