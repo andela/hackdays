@@ -76,11 +76,49 @@ dd {
   font-weight: 100;
 }
 
+.arrow-down {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.arrow-down:after {
+  content: "↓";
+  color: #ffffff;
+  font-size: 2em;
+  animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    bottom: 40px;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.50;
+  }
+  75%{
+    opacity: 0.75;
+  }
+  100% {
+    bottom: 20px;
+    opacity: 1;
+  }
+}
+
 .container {
   max-width: 800px;
 }
 
-dt p {
+.container  p {
+  text-align: center;
+}
+
+.container dt p, .container dd p {
   text-align: left;
 }
 
